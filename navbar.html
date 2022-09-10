@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        :root{
+            --hospital-green: #ACD9B2;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --lg: 18px;
+            --sm: 14px;
+            --md: 16px; 
+        }
+        body{
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 24px;
+            border-bottom: 2px solid var(--very-light-pink);
+            margin: 8px 0 8px 0;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0;
+        }
+        nav ul a{
+            text-decoration: none;
+            color: var(--very-light-pink);
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 8px;
+        }
+        nav ul a:hover{
+            color: var(--hospital-green);
+            border: 1px solid var(--hospital-green);
+        }
+        nav .navbar-left {
+            display:flex;
+            align-items: center;
+            margin-left: 4px;
+        }
+        .navbar-right ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+        nav .navbar-right ul li:nth-child(1){
+            margin-right: 12px;
+        }
+        nav .navbar-left li:nth-child(2){
+            margin-left: 30px;
+        }
+
+        nav .navbar-right ul:nth-child(1) {
+            font-size: var(--sm);
+            color: var(--very-light-pink);
+            padding: 0;
+        }
+        nav .navbar-left img {
+            width: 80px;
+        }
+        .menu{
+            width: 30px;
+            display: none;
+        }
+        .navbar-shopping-cart img {
+            position: relative;
+        }
+        .navbar-shopping-cart img {
+            width: 30px;
+        }
+        .navbar-shopping-cart div {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--hospital-green);
+            font-size: var(--sm);
+            font-weight: bold;
+            color: black;
+            position:absolute;
+            top: 16px;
+            right: 24px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        @media (max-width: 640px){
+            .menu{
+                display: block;
+            }
+            .navbar-right ul li:nth-child(1){
+            display: none;
+            }
+            .navbar-left ul li {
+            display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="./logos/menu.png" alt="menu" class="menu">
+
+        <div class="navbar-left">
+            <ul>
+                <img class="yard-sale" src="./logos/logo1.png" alt="yard-sale-logo">
+                <li><a href="/">All</a></li>
+                <li><a href="/">Clothes</a></li>
+                <li><a href="/">Electronics</a></li>
+                <li><a href="/">Toys</a></li>
+                <li><a href="/">Others</a></li>
+            </ul>
+        </div>
+
+        <div class="navbar-right">
+            <ul>
+                <li>platzi@example.com</li>
+                <li class="navbar-shopping-cart"><img src="./logos/shopping-cart.PNG"><div>2</div></li>
+            </ul>
+        </div>
+    </nav>
+    
+</body>
+</html>

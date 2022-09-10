@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Main page</title>
+    <style>
+        :root{
+            --hospital-green: #ACD9B2;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --lg: 18px;
+            --sm: 14px;
+            --md: 16px; 
+        }
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .cards-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 250px);
+            gap: 30px;
+            place-content: center;
+        }
+        .product-card{
+            width: 240px;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-card > img {
+            height: 240px;
+            width: 100%;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .shop-logo{
+            width: 40px;
+            height: 40px;
+        }
+        .product-info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .product-info figure{
+            margin: 0;
+        }
+        .product-info div p:nth-child(1){
+            font-weight: 700;
+            font-size: var(--md);
+            margin-top: 4px;
+            margin-bottom: 4px;
+        }
+        .product-info div p:nth-child(2){
+            font-size: var(--sm);
+            margin-top: 0px;
+            margin-bottom: 0px;
+            color: var(--very-light-pink);
+        }
+        @media (max-width: 640px){
+            .cards-container{
+                display: grid;
+                grid-template-columns: repeat(auto-fill, 150px);
+                gap: 30px;
+            }
+            .product-card{
+                width: 150px;
+            }
+            .product-card > img {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="main-container">
+
+        <div class="cards-container">
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>Precio</p>
+                        <p>Nombre</p>
+                    </div>
+                    <figure>
+                        <img src="./logos/cart.png" class="shop-logo">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>Precio</p>
+                        <p>Nombre</p>
+                    </div>
+                    <figure>
+                        <img src="./logos/cart.png" class="shop-logo">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>Precio</p>
+                        <p>Nombre</p>
+                    </div>
+                    <figure>
+                        <img src="./logos/cart.png" class="shop-logo">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>Precio</p>
+                        <p>Nombre</p>
+                    </div>
+                    <figure>
+                        <img src="./logos/cart.png" class="shop-logo">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>Precio</p>
+                        <p>Nombre</p>
+                    </div>
+                    <figure>
+                        <img src="./logos/cart.png" class="shop-logo">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>Precio</p>
+                        <p>Nombre</p>
+                    </div>
+                    <figure>
+                        <img src="./logos/cart.png" class="shop-logo">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>Precio</p>
+                        <p>Nombre</p>
+                    </div>
+                    <figure>
+                        <img src="./logos/cart.png" class="shop-logo">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>Precio</p>
+                        <p>Nombre</p>
+                    </div>
+                    <figure>
+                        <img src="./logos/cart.png" class="shop-logo">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>Precio</p>
+                        <p>Nombre</p>
+                    </div>
+                    <figure>
+                        <img src="./logos/cart.png" class="shop-logo">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>Precio</p>
+                        <p>Nombre</p>
+                    </div>
+                    <figure>
+                        <img src="./logos/cart.png" class="shop-logo">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>Precio</p>
+                        <p>Nombre</p>
+                    </div>
+                    <figure>
+                        <img src="./logos/cart.png" class="shop-logo">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>Precio</p>
+                        <p>Nombre</p>
+                    </div>
+                    <figure>
+                        <img src="./logos/cart.png" class="shop-logo">
+                    </figure>
+                </div>
+            </div>
+            
+
+
+    </section>
+</body>
+</html>
