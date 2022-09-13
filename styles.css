@@ -136,7 +136,7 @@ nav .navbar-left img {
 .mobile-menu{
     background-color: var(--white);
     position: absolute;
-    top: 60px;
+    top: 62px;
     width: 200px;
     height: auto;
     border-radius: 5px;
