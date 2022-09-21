@@ -121,9 +121,6 @@ productList.push({
 
 renderProducts(productList);
 
-const productCard = document.querySelector('.product-card');
-productCard.addEventListener('click', showProductView);
-
 function renderProducts(arrayList){
     for (product of arrayList){
         const productCard = document.createElement('div');
@@ -131,6 +128,7 @@ function renderProducts(arrayList){
     
         const img = document.createElement('img');
         img.setAttribute('src', product.image);
+        img.addEventListener('click',showProductView);
     
         const productInfo = document.createElement('div');
         productInfo.classList.add('product-info');
